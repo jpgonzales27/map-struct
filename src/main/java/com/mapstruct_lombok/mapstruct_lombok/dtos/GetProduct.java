@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,5 +17,7 @@ public class GetProduct {
 
     private String name;
 
-    private String creationDate;
+    private LocalDateTime creationDate;
+
+    private GetCategory category;
 }

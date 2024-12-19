@@ -3,10 +3,11 @@ package com.mapstruct_lombok.mapstruct_lombok.mapper;
 import com.mapstruct_lombok.mapstruct_lombok.dtos.GetProduct;
 import com.mapstruct_lombok.mapstruct_lombok.entities.Product;
 import org.mapstruct.*;
+import org.mapstruct.Mapper;
 
 import java.util.List;
 
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING,uses = {CategoryMapper.class})
 public interface ProductMapper {
 
     /**

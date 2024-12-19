@@ -13,10 +13,14 @@ public interface ProductMapper {
     /**
      * como las propiedades id y name se llaman igual en la entity y el dto las podemos evitar
      * mapStruct igual las mapeara
+     *
+     * Si las propiedades fueran diferentes debemos hacer el mapeo de forma manual
      */
     @Mappings({
 //            @Mapping(source = "id", target = "id"),
 //            @Mapping(source = "name", target = "name"),
+//            @Mapping(source = "id", target = "productId"),
+//            @Mapping(source = "name", target = "productName"),
             @Mapping(source = "creationDate", target = "creationDate", dateFormat = "yyyy-MM-dd HH:mm:ss")
     })
     GetProduct toGetDTO(Product product);

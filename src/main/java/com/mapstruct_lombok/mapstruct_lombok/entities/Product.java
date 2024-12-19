@@ -6,6 +6,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -21,6 +22,8 @@ public class Product {
     private String name;
 
     private LocalDateTime creationDate;
+
+    private BigDecimal price;
 
     @ManyToOne
     @JoinColumn(name = "category_id")

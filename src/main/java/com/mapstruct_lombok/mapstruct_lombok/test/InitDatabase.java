@@ -36,7 +36,7 @@ public class InitDatabase {
 
             System.out.println("------------Mapeando listas de objetos----------------");
 
-            System.out.println("---GET PRODUCT LIST---");
+            System.out.println("---DTO PRODUCT LIST---");
             List<GetProduct> getProductList2 = productMapper.toGetProductList(products);
             getProductList2.forEach(System.out::println);
 

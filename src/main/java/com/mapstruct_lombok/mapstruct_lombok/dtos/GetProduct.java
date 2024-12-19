@@ -13,11 +13,13 @@ import java.time.LocalDateTime;
 @Builder
 public class GetProduct {
 
-    private Long id;
+    private long id;
 
     private String name;
 
-    private LocalDateTime creationDate;
+    private String creationDate;
 
     private GetCategory category;
+
+    private String price;
 }
